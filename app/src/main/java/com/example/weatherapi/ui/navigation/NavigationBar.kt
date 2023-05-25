@@ -65,12 +65,12 @@ fun NavBar(navController: NavController) {
                 RoundedCornerShape(15.dp, 15.dp, 15.dp, 15.dp)
             ),
         backgroundColor = Color.Magenta,
-        contentColor = Color.White
+        contentColor = Color.Black
     ) {
         val navBackStackEntry by navController.currentBackStackEntryAsState()
         val currentRoute = navBackStackEntry?.destination?.route
         items.forEach { item ->
-            var color = Color.White.copy(alpha = 0.4f)
+            var color = Color.Black.copy(alpha = 0.4f)
             BottomNavigationItem(
                 icon = {
                     if (currentRoute == item.route) {

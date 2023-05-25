@@ -87,7 +87,8 @@ fun WeatherScreen(
 
         }
     }
-    val gradientColors = listOf(Color(0xFF060620), MaterialTheme.colors.primary)
+  //  val gradientColors = listOf(Color(0xFF060620), MaterialTheme.colors.primary)
+    val gradientColors = listOf(Color(0xFFf54293), MaterialTheme.colors.primary)
     Box(
         modifier = Modifier
             .fillMaxSize()

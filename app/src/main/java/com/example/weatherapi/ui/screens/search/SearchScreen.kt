@@ -68,7 +68,8 @@ fun SearchScreen(
     favouriteViewModel: FavouriteViewModel,
     mainViewModel: MainViewModel
 ) {
-    val gradientColors = listOf(Color(0xFF060620), MaterialTheme.colors.primary)
+    //val gradientColors = listOf(Color(0xFF060620), MaterialTheme.colors.primary)
+    val gradientColors = listOf(Color(0xFFf54293), MaterialTheme.colors.primary)
     var list = favouriteViewModel.favList.collectAsState().value
     Box(
         modifier = Modifier
@@ -95,6 +96,7 @@ fun SearchScreen(
                     Text(
                         stringResource(R.string.pick_location),
                         fontSize = 30.sp,
+                        color = Color.White,
                         fontWeight = FontWeight.Bold
                     )
                 }
@@ -105,6 +107,7 @@ fun SearchScreen(
                     Text(
                         stringResource(R.string.find_city),
                         fontSize = 14.sp,
+                        color = Color.White,
                         textAlign = TextAlign.Center
                     )
                 }
@@ -146,6 +149,7 @@ fun SearchScreen(
                             fontSize = 14.sp,
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.Center,
+                            color = Color.White,
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .padding(top = 20.dp)
@@ -268,6 +272,7 @@ fun FavCard(
                             it
                                 .joinToString(separator = " ") { word -> word.replaceFirstChar { it.uppercase() } },
                             fontSize = 11.sp,
+                            color = Color.White,
                             fontWeight = FontWeight.ExtraLight
                         )
                     }
