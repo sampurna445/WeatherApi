@@ -124,6 +124,27 @@ dependencies {
     implementation 'androidx.palette:palette:1.0.0'
 
 
+
+    //test implementation
+    testImplementation 'junit:junit:4.13.2'
+
+    //test coroutine
+    testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4'
+
+
+    //test for viewmodel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1"
+
+    //mockito
+    testImplementation 'org.mockito:mockito-core:3.8.0'
+    androidTestImplementation 'org.mockito:mockito-android:2.2.0'
+    // Other dependencies...
+    testImplementation 'org.mockito.kotlin:mockito-kotlin:3.2.0'
+
+    testImplementation "androidx.arch.core:core-testing:2.1.0"
+
+
+
 }
 
 // Allow references to generated code
